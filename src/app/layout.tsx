@@ -1,6 +1,9 @@
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
 
+import React from 'react';
+import ServerSideLayout from '@/app/layouts/ServerSideLayout';
+
 import { Flex } from '@/once-ui/components'
 import classNames from 'classnames';
 import { Inter } from 'next/font/google'
@@ -57,7 +60,9 @@ export default function RootLayout({
 				fillWidth fillHeight margin="0" padding="0">
 				<Flex
 					flex={1} direction="column">
-					{children}
+					<ServerSideLayout>
+						{children}
+					</ServerSideLayout>
 				</Flex>
 			</Flex>
 		</Flex>

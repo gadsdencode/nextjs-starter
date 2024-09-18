@@ -9,6 +9,11 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@copilotkit/react-core": "^1.2.1",
+		"@copilotkit/react-textarea": "^1.2.1",
+		"@copilotkit/react-ui": "^1.2.1",
+		"@copilotkit/runtime-client-gql": "^1.2.1",
+		"@copilotkit/shared": "^1.2.1",
 		"@floating-ui/react-dom": "^2.1.1",
 		"classnames": "^2.5.1",
 		"next": "^14.2.4",

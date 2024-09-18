@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import { CopilotChat } from "@copilotkit/react-ui";
 
 import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, Background, LetterFx } from '@/once-ui/components';
 import Link from 'next/link';
@@ -58,6 +59,12 @@ export default function Home() {
 									padding: 'var(--static-space-8) var(--static-space-16)',
 									backdropFilter: 'blur(var(--static-space-1))'}}>
 								Start by editing <span className="brand-on-background-medium">app/page.tsx</span>
+								<CopilotChat
+									labels={{
+										title: "ZappAI",
+										initial: "Hi! 👋 How can I assist you today?",
+									}}
+								/>
 							</InlineCode>
 							<Heading
 								wrap="balance"
